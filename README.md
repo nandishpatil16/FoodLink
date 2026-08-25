@@ -1,29 +1,22 @@
-# Welcome to your Lovable project
+# FoodLink
 
-This project was built with [Lovable](https://lovable.dev).
+FoodLink is a smart food rescue platform that connects hotels, halls, and households with verified NGOs and shelters so safe surplus food reaches people instead of bins.
 
-## Build with Lovable
+## Features
+- **Real-Time Matching:** Post surplus food and get it claimed instantly by verified NGOs.
+- **Urgency Scoring:** Smart AI algorithm prioritizes food based on perishability, age, and pickup deadline.
+- **Secure Handoff:** 6-digit OTP verification ensures safe and tracked delivery.
+- **Organization Verification:** Donor and receiver accounts are vetted for safety.
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+## Getting Started
+1. Install dependencies: `npm install`
+2. Start the development server: `npm run dev`
+3. Build for production: `npm run build`
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Environment Variables
+Create a `.env` file with the following Supabase keys:
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+- `SUPABASE_URL`
+- `SUPABASE_PUBLISHABLE_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`

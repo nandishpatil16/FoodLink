@@ -3,7 +3,6 @@ import { useState } from "react";
 import { HandHeart, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
 import { fetchAccount } from "@/hooks/useAccount";
 import { devEnsureLogin } from "@/lib/dev-auth.functions";
 
@@ -64,15 +63,17 @@ function LoginPage() {
 
 
   async function onGoogle() {
-    const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: window.location.origin,
+      },
     });
-    if (result.error) {
+    if (error) {
       toast.error("Google sign-in failed");
       return;
     }
-    if (result.redirected) return;
-    await routeAfterLogin();
+    // Supabase redirects to Google, so we don't route here.
   }
 
   return (

@@ -38,3 +38,13 @@
 [2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:221:35 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
   Plugin: [35mtanstack-start-core::server-fn:client[39m
   File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m
+[2m12:10:36 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles.css?direct, /src/components/RegistrationForm.tsx[22m
+[2m12:11:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles.css?direct[22m
+[2m12:11:11 PM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/lib/stats.functions.ts[22m
+[2m12:11:12 PM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m program reload
+[2m12:13:12 PM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[33mThe plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the [1mresolve.tsconfigPaths[22m option. You can remove the plugin and set [1mresolve.tsconfigPaths: true[22m in your Vite config instead.[39m
+[2m12:13:40 PM[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:56:53 PM[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[33mThe plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the [1mresolve.tsconfigPaths[22m option. You can remove the plugin and set [1mresolve.tsconfigPaths: true[22m in your Vite config instead.[39m
+[2m12:58:06 PM[22m [36m[1m[vite][22m[39m server restarted.

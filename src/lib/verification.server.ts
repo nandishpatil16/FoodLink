@@ -59,10 +59,10 @@ function heuristicChecks(input: VerificationInput) {
 
 /** AI-assisted plausibility pass; falls back to deterministic checks when the gateway is unavailable. */
 async function aiSummary(input: VerificationInput, checks: ReturnType<typeof heuristicChecks>) {
-  const apiKey = process.env["LOVABLE_API_KEY"];
+  const apiKey = process.env["OPENAI_API_KEY"];
   if (!apiKey) return null;
   try {
-    const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({

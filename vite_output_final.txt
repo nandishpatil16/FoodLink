@@ -1,0 +1,40 @@
+
+> dev
+> vite dev --port 5173 --strictPort
+
+[33mThe plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the [1mresolve.tsconfigPaths[22m option. You can remove the plugin and set [1mresolve.tsconfigPaths: true[22m in your Vite config instead.[39m
+
+  [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m28202[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.186.207.44:[1m5173[22m/[39m  [2mWi-Fi[22m
+[2m10:46:47 AM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m connected.
+[2m10:47:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
+[2m10:47:38 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mdependency optimized: [33m@tanstack/router-core/isServer[32m[39m
+[2m10:47:38 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
+[2m10:47:45 AM[22m [33m[1m[vite][22m[39m [33m[2m(ssr)[22m[39m [33mwarning: E:/foodlink-project/src/lib/dev-auth.functions.ts:9:31 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:ssr[39m
+  File: [36mE:/foodlink-project/src/lib/dev-auth.functions.ts[39m
+[2m10:47:47 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mdependencies optimized: [33m@tanstack/router-core, @tanstack/router-core/ssr/client, seroval[32m[39m
+[2m10:47:47 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/dev-auth.functions.ts:9:31 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/dev-auth.functions.ts[39m
+[2m10:47:48 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Supabase] Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY. Connect Supabase in Lovable Cloud.
+[2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:23:35 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m
+[2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:67:31 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m
+[2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:126:31 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m
+[2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:164:32 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m
+[2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:198:30 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m
+[2m10:47:56 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: E:/foodlink-project/src/lib/foodlink.functions.ts:221:35 createServerFn().inputValidator() is deprecated. Use createServerFn().validator() instead.[39m
+  Plugin: [35mtanstack-start-core::server-fn:client[39m
+  File: [36mE:/foodlink-project/src/lib/foodlink.functions.ts[39m

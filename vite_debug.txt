@@ -1,0 +1,10 @@
+
+> dev
+> vite dev --port 5173 --strictPort
+
+[33mThe plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the [1mresolve.tsconfigPaths[22m option. You can remove the plugin and set [1mresolve.tsconfigPaths: true[22m in your Vite config instead.[39m
+
+  [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m76692[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.186.207.44:[1m5173[22m/[39m  [2mWi-Fi[22m

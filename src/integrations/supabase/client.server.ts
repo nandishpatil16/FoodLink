@@ -31,8 +31,9 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
 
 function createSupabaseAdminClient() {
   const cfEnv = (globalThis as any).__cloudflare_env__ || {};
-  const SUPABASE_URL = process.env['SUPABASE_URL'] || cfEnv.SUPABASE_URL || (import.meta as any).env?.SUPABASE_URL || (import.meta as any).env?.VITE_SUPABASE_URL;
-  const SUPABASE_SERVICE_ROLE_KEY = process.env['SUPABASE_SERVICE_ROLE_KEY'] || cfEnv.SUPABASE_SERVICE_ROLE_KEY || (import.meta as any).env?.SUPABASE_SERVICE_ROLE_KEY;
+  const procEnv = typeof process !== 'undefined' ? process.env : {};
+  const SUPABASE_URL = procEnv['SUPABASE_URL'] || cfEnv.SUPABASE_URL || (import.meta as any).env?.SUPABASE_URL || (import.meta as any).env?.VITE_SUPABASE_URL;
+  const SUPABASE_SERVICE_ROLE_KEY = procEnv['SUPABASE_SERVICE_ROLE_KEY'] || cfEnv.SUPABASE_SERVICE_ROLE_KEY || (import.meta as any).env?.SUPABASE_SERVICE_ROLE_KEY;
 
   if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
     const missing = [

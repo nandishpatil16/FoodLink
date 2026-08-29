@@ -46,11 +46,17 @@ function isH3SwallowedErrorBody(body: string): boolean {
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
-    // Cloudflare Workers pass environment variables/secrets via the `env` parameter,
-    // NOT through process.env. Bridge them so all server-side code can read them.
+    // Cloudflare Workers pass environment variables/secrets via the `env` parameter.
+    // We try to safely bridge them to process.env and a global object.
     if (env && typeof env === "object") {
-      for (const [k, v] of Object.entries(env as Record<string, unknown>)) {
-        if (typeof v === "string") process.env[k] = v;
+      (globalThis as any).__cloudflare_env__ = env;
+      try {
+        if (typeof process === "undefined") (globalThis as any).process = { env: {} };
+        for (const [k, v] of Object.entries(env as Record<string, unknown>)) {
+          if (typeof v === "string") process.env[k] = v;
+        }
+      } catch (e) {
+        // process.env might be frozen by a polyfill, ignore
       }
     }
 

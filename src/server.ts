@@ -66,7 +66,8 @@ export default {
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
       console.error(error);
-      return new Response(renderErrorPage(), {
+      const errorMessage = error instanceof Error ? error.stack || error.message : String(error);
+      return new Response(`<html><body style="font-family:monospace;padding:2rem;"><h1>SSR Crash Log</h1><pre style="background:#f4f4f4;padding:1rem;color:red;white-space:pre-wrap;">${errorMessage}</pre></body></html>`, {
         status: 500,
         headers: { "content-type": "text/html; charset=utf-8" },
       });

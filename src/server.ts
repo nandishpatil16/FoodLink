@@ -46,6 +46,14 @@ function isH3SwallowedErrorBody(body: string): boolean {
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    // Cloudflare Workers pass environment variables/secrets via the `env` parameter,
+    // NOT through process.env. Bridge them so all server-side code can read them.
+    if (env && typeof env === "object") {
+      for (const [k, v] of Object.entries(env as Record<string, unknown>)) {
+        if (typeof v === "string") process.env[k] = v;
+      }
+    }
+
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
